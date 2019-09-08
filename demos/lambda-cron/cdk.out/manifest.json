@@ -1,0 +1,120 @@
+{
+  "version": "0.36.0",
+  "artifacts": {
+    "LambdaCronExample": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaCronExample.template.json"
+      },
+      "metadata": {
+        "/LambdaCronExample/Singleton/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SingletonServiceRoleDDD815CD",
+            "trace": [
+              "new Role (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new Function (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "new LambdaCronStack (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:11:26)",
+              "Object.<anonymous> (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:27:1)",
+              "Module._compile (internal/modules/cjs/loader.js:936:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)",
+              "Module.load (internal/modules/cjs/loader.js:790:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:703:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:999:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LambdaCronExample/Singleton/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Singleton8C7B99F3",
+            "trace": [
+              "new Function (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-lambda/lib/function.js:75:26)",
+              "new LambdaCronStack (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:11:26)",
+              "Object.<anonymous> (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:27:1)",
+              "Module._compile (internal/modules/cjs/loader.js:936:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)",
+              "Module.load (internal/modules/cjs/loader.js:790:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:703:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:999:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LambdaCronExample/Singleton/AllowEventRuleLambdaCronExampleRule4981BEF8": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SingletonAllowEventRuleLambdaCronExampleRule4981BEF87EE49ED6",
+            "trace": [
+              "Function.addPermission (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:19:9)",
+              "Object.addLambdaPermission (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-events-targets/lib/util.js:29:17)",
+              "LambdaFunction.bind (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-events-targets/lib/lambda.js:18:16)",
+              "Rule.addTarget (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-events/lib/rule.js:61:36)",
+              "new LambdaCronStack (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:22:14)",
+              "Object.<anonymous> (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:27:1)",
+              "Module._compile (internal/modules/cjs/loader.js:936:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)",
+              "Module.load (internal/modules/cjs/loader.js:790:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:703:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:999:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ],
+        "/LambdaCronExample/Rule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rule4C995B7F",
+            "trace": [
+              "new Rule (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/node_modules/@aws-cdk/aws-events/lib/rule.js:21:26)",
+              "new LambdaCronStack (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:19:22)",
+              "Object.<anonymous> (/Users/leo/git/cdk-talk-examples/demos/lambda-cron/index.js:27:1)",
+              "Module._compile (internal/modules/cjs/loader.js:936:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)",
+              "Module.load (internal/modules/cjs/loader.js:790:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:703:12)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:999:10)",
+              "internal/main/run_main_module.js:17:11"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/aws-events": "1.6.1",
+      "@aws-cdk/core": "1.6.1",
+      "@aws-cdk/cx-api": "1.6.1",
+      "@aws-cdk/aws-events-targets": "1.6.1",
+      "@aws-cdk/aws-iam": "1.6.1",
+      "@aws-cdk/region-info": "1.6.1",
+      "@aws-cdk/aws-lambda": "1.6.1",
+      "@aws-cdk/aws-cloudwatch": "1.6.1",
+      "@aws-cdk/aws-ec2": "1.6.1",
+      "@aws-cdk/aws-ssm": "1.6.1",
+      "@aws-cdk/aws-sqs": "1.6.1",
+      "@aws-cdk/aws-kms": "1.6.1",
+      "@aws-cdk/aws-s3-assets": "1.6.1",
+      "@aws-cdk/assets": "1.6.1",
+      "@aws-cdk/aws-s3": "1.6.1",
+      "@aws-cdk/aws-ecs": "1.6.1",
+      "@aws-cdk/aws-applicationautoscaling": "1.6.1",
+      "@aws-cdk/aws-autoscaling-common": "1.6.1",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.6.1",
+      "@aws-cdk/aws-servicediscovery": "1.6.1",
+      "@aws-cdk/aws-ecr-assets": "1.6.1",
+      "@aws-cdk/aws-cloudformation": "1.6.1",
+      "@aws-cdk/aws-ecr": "1.6.1",
+      "@aws-cdk/aws-autoscaling": "1.6.1",
+      "@aws-cdk/aws-autoscaling-hooktargets": "1.6.1",
+      "@aws-cdk/aws-sns": "1.6.1",
+      "@aws-cdk/aws-sns-subscriptions": "1.6.1",
+      "@aws-cdk/aws-logs": "1.6.1",
+      "@aws-cdk/custom-resources": "1.6.1",
+      "jsii-runtime": "node.js/v12.9.1"
+    }
+  }
+}
