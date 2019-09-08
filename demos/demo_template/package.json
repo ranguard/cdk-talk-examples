@@ -1,0 +1,16 @@
+{
+  "name": "cdk-demo-fixme",
+  "version": "1.0.0",
+  "description": "A demo to FIXME",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "author": "Leo Lapworth",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-cdk/core": "^1.7.0"
+  }
+}
