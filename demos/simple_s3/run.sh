@@ -5,10 +5,16 @@
 # hide the evidence
 clear
 
-pe "cd demos/simple_s3"
+pe "cd code/simple_s3"
 
-pe "code index.ts"
+pe "ls"
 wait
+
+pe "code ."
+wait
+
+p "npm install";
+# TODO: copy in node_modules and package-json
 
 p "cdk synth"
 cdk synth | pygmentize -l yaml

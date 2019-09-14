@@ -11,10 +11,4 @@
 # hide the evidence
 clear
 
-# Put your stuff here
-
-p "this is me typing... honest"
-
-p "good for demos"
-
-source demos/simple_s3/demo.sh
+source demos/simple_s3/run.sh
