@@ -15,6 +15,15 @@ wait
 
 p "npm install";
 # TODO: copy in node_modules and package-json
+cp -r ../../demos/simple_s3/node_modules ./
+cp ../../demos/simple_s3/package-lock.json ./
+
+cat ../../demos/simple_s3/npm_install.txt
+
+pe "npm run build"
+
+pe "ls"
+wait
 
 p "cdk synth"
 cdk synth | pygmentize -l yaml

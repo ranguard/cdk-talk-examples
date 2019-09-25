@@ -8,6 +8,10 @@
 ########################
 . demo-magic.sh
 
+cd ./code
+sh ./cleanup.sh
+cd ..
+
 # hide the evidence
 clear
 

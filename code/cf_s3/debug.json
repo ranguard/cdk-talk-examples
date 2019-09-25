@@ -1,0 +1,81 @@
+{
+    "StackEvents": [
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "1959c120-d8ba-11e9-bb16-0abc432e4032",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "DemoStack2",
+            "PhysicalResourceId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2019-09-16T19:42:21.223Z",
+            "ResourceStatus": "ROLLBACK_COMPLETE"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "MyFirstBucket-DELETE_COMPLETE-2019-09-16T19:42:20.814Z",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "MyFirstBucket",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::S3::Bucket",
+            "Timestamp": "2019-09-16T19:42:20.814Z",
+            "ResourceStatus": "DELETE_COMPLETE",
+            "ResourceProperties": "{\"BucketName\":\"dem_for_scl_2019\"}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "082bb6b0-d8ba-11e9-9a90-0646713dba72",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "DemoStack2",
+            "PhysicalResourceId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2019-09-16T19:41:52.401Z",
+            "ResourceStatus": "ROLLBACK_IN_PROGRESS",
+            "ResourceStatusReason": "The following resource(s) failed to create: [MyFirstBucket]. . Rollback requested by user."
+        },
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "MyFirstBucket-CREATE_FAILED-2019-09-16T19:41:52.005Z",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "MyFirstBucket",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::S3::Bucket",
+            "Timestamp": "2019-09-16T19:41:52.005Z",
+            "ResourceStatus": "CREATE_FAILED",
+            "ResourceStatusReason": "Bucket name should not contain '_'",
+            "ResourceProperties": "{\"BucketName\":\"dem_for_scl_2019\"}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "MyFirstBucket-CREATE_IN_PROGRESS-2019-09-16T19:41:51.590Z",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "MyFirstBucket",
+            "PhysicalResourceId": "",
+            "ResourceType": "AWS::S3::Bucket",
+            "Timestamp": "2019-09-16T19:41:51.590Z",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceProperties": "{\"BucketName\":\"dem_for_scl_2019\"}"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "068cacb0-d8ba-11e9-a86d-0a99a68566c4",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "DemoStack2",
+            "PhysicalResourceId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2019-09-16T19:41:49.683Z",
+            "ResourceStatus": "CREATE_IN_PROGRESS",
+            "ResourceStatusReason": "User Initiated"
+        },
+        {
+            "StackId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "EventId": "03635930-d8ba-11e9-b8ea-069f6d7e1780",
+            "StackName": "DemoStack2",
+            "LogicalResourceId": "DemoStack2",
+            "PhysicalResourceId": "arn:aws:cloudformation:eu-west-1:374733882471:stack/DemoStack2/0363ce60-d8ba-11e9-b8ea-069f6d7e1780",
+            "ResourceType": "AWS::CloudFormation::Stack",
+            "Timestamp": "2019-09-16T19:41:44.414Z",
+            "ResourceStatus": "REVIEW_IN_PROGRESS",
+            "ResourceStatusReason": "User Initiated"
+        }
+    ]
+}
