@@ -27,12 +27,16 @@ wait
 
 p "cdk synth"
 cdk synth | pygmentize -l yaml
+wait
 
-echo "
-Are you sure you want to delete: StoreStack (y/n)?"
-p "y"
-echo "StoreStack: destroying...
+cdk deploy
 
- ✅  StoreStack: destroyed
-"
+wait
+# echo "
+# Are you sure you want to delete: StoreStack (y/n)?"
+# p "y"
+# echo "StoreStack: destroying...
+
+#  ✅  StoreStack: destroyed
+# "
 

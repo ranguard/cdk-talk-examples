@@ -6,7 +6,7 @@ export class HelloCdkStack extends cdk.Stack {
     super(scope, id, props);
 
     new s3.Bucket(this, 'MyFirstBucket', {
-      bucketName: "dem_for_scl_2019",
+      bucketName: "demo-for-scl-2019",
     });
   }
 }

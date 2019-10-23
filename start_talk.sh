@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ########################
 # Install:
@@ -8,11 +8,17 @@
 ########################
 . demo-magic.sh
 
+# Open talk
+# open talk/cdk.key
+
+# Clean up old files
 cd ./code
 sh ./cleanup.sh
 cd ..
 
 # hide the evidence
 clear
+
+wait
 
 source demos/simple_s3/run.sh

@@ -61,4 +61,4 @@ typings/
 
 # We generate these
 .d.ts
-
+*.d.ts
