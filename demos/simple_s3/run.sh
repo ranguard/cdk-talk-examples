@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 . demo-magic.sh
 
@@ -26,7 +26,7 @@ pe "ls"
 wait
 
 p "cdk synth"
-cdk synth | pygmentize -l yaml
+cdk synth | pygmentize -l yaml | less
 wait
 
 cdk deploy

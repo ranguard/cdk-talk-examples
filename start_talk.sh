@@ -9,7 +9,7 @@
 . demo-magic.sh
 
 # Open talk
-# open talk/cdk.key
+open talk/cdk.key
 
 # Clean up old files
 cd ./code
