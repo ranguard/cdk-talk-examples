@@ -1,0 +1,82 @@
+#!/bin/sh
+
+. demo-magic.sh
+
+# hide the evidence
+clear
+
+p 'mkdir full_s3'
+p 'cd full_s3'
+
+wait
+
+p 'cdk init -l typescript'
+
+wait
+
+# FIXME: change to 0.5
+awk '{print $0; system("sleep 0.1");}' ../../demos/full_s3/001_npm_installed.txt
+
+cat ../../demos/full_s3/002_help.txt
+
+wait
+
+p "npm install @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node"
+cat ../../demos/full_s3/010_install_deps.txt
+
+# Copy full file to type
+pbcopy < ../../demos/full_s3/full_s3-stack.ts
+
+wait
+
+p "code ."
+
+code demos/full_s3/full_s3_010_with_deps/
+
+wait
+
+p "npm run build"
+
+echo "
+> full_s3@0.1.0 build
+> tsc
+"
+
+wait
+
+pe "cdk synth"
+
+wait
+
+pe 'mkdir -p functions/s3_event'
+
+pbcopy < ../../demos/full_s3/index.ts
+
+p 'code functions/s3_event/index.ts'
+
+echo '' >> full_s3_030_with_func/functions/s3_event/index.ts
+
+code full_s3_030_with_func/functions/s3_event/index.ts
+
+wait
+
+pe "npm run build"
+
+wait
+
+pe "cdk synth"
+cdk synth | pygmentize -l yaml | less
+wait
+
+p "cdk deploy"
+
+sleep 0.5
+cat ../../demos/full_s3/100_deploy.txt
+
+p "y"
+
+echo "FullS3Stack: deploying..."
+
+cd ../..
+
+wait

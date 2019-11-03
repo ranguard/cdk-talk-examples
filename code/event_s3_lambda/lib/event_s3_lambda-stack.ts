@@ -15,12 +15,17 @@ export class EventS3LambdaStack extends cdk.Stack {
       events: [ s3.EventType.OBJECT_CREATED],
     });
 
+     
+
     // A function to process the S3 event
     const fn = new lambda.Function(this, 'EchoS3', {
-      runtime: lambda.Runtime.NODEJS_10_X,
+      runtime: lambda.Runtime.NODEJS_8_10,
       handler: 'index.handler',
-      code: lambda.Code.fromAsset('./lib/funcs/echo_s3/'),
+      code: lambda.Code.fromAsset([__dirname, '../funcs/echo_s3/'].join('/')),
       events: [bucketEvents],
+      environment: {
+        SOME: 'value'
+      }
     });
 
     // Remember to let the function read/write to the 
