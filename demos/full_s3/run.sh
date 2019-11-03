@@ -11,6 +11,8 @@ rm -rf "${DIR}"
 # hide the evidence
 clear
 
+wait
+
 pe "mkdir ${DIR}"
 pe "cd ${DIR}"
 
@@ -56,6 +58,8 @@ pe "npm run build"
 pe "cdk synth"
 cdk synth | pygmentize -l yaml | less
 wait
+
+pe "cdk diff"
 
 pe "cdk deploy"
 

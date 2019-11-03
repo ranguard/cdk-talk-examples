@@ -16,20 +16,25 @@ cd ./code
 sh ./cleanup.sh
 cd ..
 
-cd ~/.npm_cache
-local-npm
-cd -
-
 # hide the evidence
 clear
 
 wait
 
-# Show simple
-# source demos/simple_s3/run.sh
+# Show simple version
+source demos/simple_s3/run.sh
+
+# Switch back
+open talk/cdk.key
 
 # Full version
 source demos/full_s3/run.sh
+
+# Switch back
+open talk/cdk.key
+
+# Demo
+source demos/local_dev/run.sh
 
 # Switch back
 open talk/cdk.key

@@ -6,6 +6,7 @@ cd code/simple_s3
 
 # hide the evidence
 clear
+wait
 
 p "cd simple_s3"
 
