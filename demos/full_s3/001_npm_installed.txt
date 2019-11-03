@@ -1,8 +1,0 @@
-Applying project template app for typescript
-Executing npm install...
-node-pre-gyp WARN Using request for node-pre-gyp https download
-
-npm notice created a lockfile as package-lock.json. You should commit this file.
-npm WARN from_scratch@0.1.0 No repository field.
-npm WARN from_scratch@0.1.0 No license field.
-

@@ -1,8 +1,0 @@
-
-+ @types/node@12.12.5
-+ @aws-cdk/aws-lambda@1.15.0
-+ @aws-cdk/aws-s3@1.15.0
-+ @aws-cdk/aws-lambda-event-sources@1.15.0
-added 30 packages from 43 contributors and audited 1755890 packages in 11.608s
-found 0 vulnerabilities
-
