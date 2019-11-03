@@ -22,7 +22,9 @@ pe 'cdk init -l typescript'
 
 wait
 
-pe "npm install @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node"
+p "npm install @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node"
+
+npm install --cache-min 9999999 @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node
 
 # Copy full file to type
 pbcopy < "${SRC}/files/full_s3-stack.ts"
@@ -60,6 +62,8 @@ cdk synth | pygmentize -l yaml | less
 wait
 
 pe "cdk diff"
+
+wait
 
 pe "cdk deploy"
 
