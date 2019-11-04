@@ -23,6 +23,7 @@ cp -r ../../demos/simple_s3/node_modules ./
 cp ../../demos/simple_s3/package-lock.json ./
 
 cat ../../demos/simple_s3/npm_install.txt
+wait
 
 pe "npm run build"
 

@@ -1,6 +1,7 @@
 #!/bin/sh
 
 . demo-magic.sh
+mirror -on
 
 SRC='/Users/leo/git/cdk-talk-examples/demos/full_s3'
 
@@ -69,6 +70,6 @@ pe "cdk deploy"
 
 pe "n"
 
-cd ..
+cd -
 
 wait

@@ -2,7 +2,11 @@
 
 . demo-magic.sh
 
+# hide the evidence
+clear
+
 DIR="/tmp/FullS3Demo"
+wait
 
 pe "cd ${DIR}"
 
@@ -22,6 +26,7 @@ cat payload.json | pygmentize -l json | less
 wait
 
 pe "sam local invoke --event payload.json EchoS339537F1B"
+wait
 
 pe "code functions/s3_event/index.ts"
 wait
@@ -30,3 +35,6 @@ pe "npm run build"
 
 pe "sam local invoke --event payload.json EchoS339537F1B"
 
+cd -
+
+wait
