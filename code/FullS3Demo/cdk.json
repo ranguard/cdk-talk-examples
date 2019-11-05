@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/full_s3_demo.ts"
+}

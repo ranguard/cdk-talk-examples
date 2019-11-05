@@ -14,18 +14,21 @@ clear
 
 wait
 
-pe "mkdir ${DIR}"
-pe "cd ${DIR}"
+p "mkdir ${DIR}"
+p "cd ${DIR}"
 
 wait
 
-pe 'cdk init -l typescript'
+p 'cdk init -l typescript'
 
-wait
+cp -r /Users/leo/git/cdk-talk-examples/code/FullS3Demo /tmp/
+cd /tmp/FullS3Demo
+# rebuild as paths changed
+npm rebuild > /dev/null 2>&1
 
 p "npm install @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node"
 
-npm install --cache-min 9999999 @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node
+# npm install --cache-min 9999999 @aws-cdk/aws-s3 @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @types/node
 
 # Copy full file to type
 pbcopy < "${SRC}/files/full_s3-stack.ts"
@@ -67,8 +70,6 @@ pe "cdk diff"
 wait
 
 pe "cdk deploy"
-
-pe "n"
 
 cd -
 
