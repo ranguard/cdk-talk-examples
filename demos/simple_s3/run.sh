@@ -63,3 +63,4 @@ awk '{print $0; system("sleep 1");}' ../../demos/simple_s3/destroy.txt
 cd ../..
 
 wait
+clear

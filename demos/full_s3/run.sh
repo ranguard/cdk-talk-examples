@@ -72,5 +72,6 @@ wait
 pe "cdk deploy"
 
 cd -
+clear
 
 wait
